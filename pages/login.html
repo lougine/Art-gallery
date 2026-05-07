@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Echoes of Art</title>
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+<body>
+    <div class="loader" id="loader"></div>
+
+    <header>
+        <div class="header-image">
+            <a href="../index.html">
+                <img src="../images/logo.png" alt="Echoes of Art Logo" class="logo">
+            </a>
+        </div>
+
+        <nav class="main-nav">
+            <ul>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="exhibitions.html">Exhibitions</a></li>
+                <li><a href="artists.html">Artists</a></li>
+                <li><a href="artworks.html">Artworks</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="https://www.instagram.com/"><img src="../images/ig.png" alt="Instagram" class="icons"></a></li>
+                <li><a href="https://www.facebook.com/"><img src="../images/fb.png" alt="Facebook" class="icons"></a></li>
+                <li><a href="https://www.gu.edu.eg/"><img src="../images/GU.png" alt="GU Logo" class="gu"></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="login-container">
+            <h2>Login to Your Account</h2>
+            <form action="login-action.html" method="POST" class="login-form">
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" required placeholder="Enter your username">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required placeholder="Enter your password">
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="submit-btn">Login</button>
+                </div>
+                <div class="form-group">
+                    <p>Don't have an account? <a href="registeration.html">Register here</a></p>
+                </div>
+                <div class="form-group">
+                    <a href="#" class="forgot-password">Forgot Password?</a>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <ul>
+            <li><a href="pages/about.html">About Us</a></li>
+            <li><a href="https://www.instagram.com/" aria-label="Instagram"><img src="../images/ig.png" alt="Instagram Icon"></a></li>
+            <li><a href="https://www.facebook.com/" aria-label="Facebook"><img src="../images/fb.png" alt="Facebook Icon"></a></li>
+            <li><a href="mailto:info@echoesofart.com" aria-label="Email"><img src="../images/mail.png" alt="Mail Icon"></a></li>
+        </ul>
+        <p>&copy; 2024 Echoes of Art. All Rights Reserved.</p>
+    </footer>
+
+    <script src="java/scripts.js"></script>
+</body>
+</html>

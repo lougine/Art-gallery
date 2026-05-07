@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Echoes of Art</title>
+    <link rel="stylesheet" href="css/global.css">
+</head>
+
+<body>
+   <!-- Header Section -->
+<header>
+    <div class="header-image">
+        <a href="index.html">
+            <img src="images/logo.png" alt="Echoes of Art Logo" class="logo">
+        </a>
+        <!-- Cart and Login Buttons -->
+        <div class="header-actions">    
+            <div class="cart">
+                <span class="cart-icon" onclick="toggleCart()">🛒</span>
+                <span class="cart-badge" id="cart-count">0</span>
+            </div>
+            <a href="pages/login.html" class="login-btn">Log In</a>
+        </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="main-nav">
+        <ul>
+            <li><a href="pages/about.html">About Us</a></li>
+            <li><a href="pages/exhibitions.html">Exhibitions</a></li>
+            <li><a href="pages/artists.html">Artists</a></li>
+            <li><a href="pages/artworks.html">Artworks</a></li>
+            <li><a href="pages/contact.html">Contact</a></li>
+            <li>
+                <a href="https://www.instagram.com/" aria-label="Instagram">
+                    <img src="images/ig.png" alt="Instagram Icon" class="icons">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com/" aria-label="Facebook">
+                    <img src="images/fb.png" alt="Facebook Icon" class="icons">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.gu.edu.eg/" aria-label="GU Website">
+                    <img src="images/GU.png" alt="GU Logo" class="gu">
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+    <!-- Breadcrumb Navigation -->
+    <main>
+        <nav aria-label="breadcrumb" class="breadcrumb">
+            <ul>
+                <li><a href="index.html">Home</a> <span>&#8250;</span></li>
+                <li><a href="pages/artworks.html">Artworks</a> <span>&#8250;</span></li>
+                <li>Met Art in Publication</li>
+            </ul>
+        </nav>
+
+        <!-- Page Title -->
+        <h2>Met Art in Publication</h2>
+
+        <!-- Artworks Section -->
+        <section class="artwork-section">
+            <!-- Artwork Cards -->
+            <div class="artwork-card">
+                <img src="images/img1.jpeg" alt="Portrait of a Woman, probably a Member of the Van Beresteyn Family">
+                <h3>Member of the Van Beresteyn Family</h3>
+                <p>Rembrandt (Rembrandt van Rijn)</p>
+                <button class="add-to-cart-btn" data-id="1" data-name="Member of the Van Beresteyn Family" data-price="5000" data-image="images/img1.jpeg">Add to Cart</button>
+            </div>
+
+            <div class="artwork-card">
+                <img src="images/img2.jpeg" alt="A Vase with Flowers by Jacob Vosmaer">
+                <h3>A Vase with Flowers</h3>
+                <p>Jacob Vosmaer - 1613</p>
+                <button class="add-to-cart-btn" data-id="2" data-name="A Vase with Flowers" data-price="3500" data-image="images/img2.jpeg">Add to Cart</button>
+            </div>
+
+            <div class="artwork-card">
+                <img src="images/img3.jpeg" alt="A Vase of Flowers by Margareta Haverman">
+                <h3>A Vase of Flowers</h3>
+                <p>Margareta Haverman - 1716</p>
+                <button class="add-to-cart-btn" data-id="3" data-name="A Vase of Flowers" data-price="4000" data-image="images/img3.jpeg">Add to Cart</button>
+            </div>
+
+            <div class="artwork-card">
+                <img src="images/img4.jpeg" alt="The Holy Family with Saint Anne by Jacob Jordaens">
+                <h3>The Holy Family with Saint Anne</h3>
+                <p>Jacob Jordaens - 1620s</p>
+                <button class="add-to-cart-btn" data-id="4" data-name="The Holy Family with Saint Anne" data-price="6000" data-image="images/img4.jpeg">Add to Cart</button>
+            </div>
+
+            <div class="artwork-card">
+                <img src="images/img5.jpeg" alt="Tilla Durieux by Auguste Renoir">
+                <h3>Tilla Durieux (Ottilie Godeffroy, 1880–1971)</h3>
+                <p>Auguste Renoir</p>
+                <button class="add-to-cart-btn" data-id="5" data-name="Tilla Durieux" data-price="4500" data-image="images/img5.jpeg">Add to Cart</button>
+            </div>
+
+            <div class="artwork-card">
+                <img src="images/img6.jpeg" alt="Mother and Child by Antoine-Emile Plassan">
+                <h3>Mother and Child</h3>
+                <p>Antoine-Emile Plassan</p>
+                <button class="add-to-cart-btn" data-id="6" data-name="Mother and Child" data-price="3000" data-image="images/img6.jpeg">Add to Cart</button>
+            </div>
+
+            <div class="artwork-card">
+                <img src="images/img7.jpg" alt="Notre-Dame-de-la-Garde (La Bonne-Mère) in Marseilles">
+                <h3>Notre-Dame-de-la-Garde (La Bonne-Mère), Marseilles</h3>
+                <p>Paul Signac</p>
+                <button class="add-to-cart-btn" data-id="7" data-name="Notre-Dame-de-la-Garde" data-price="7000" data-image="images/img7.jpeg">Add to Cart</button>
+            </div>
+
+            <div class="artwork-card">
+                <img src="images/img8.jpeg" alt="The Rest on the Flight into Egypt by Netherlandish Painters">
+                <h3>The Rest on the Flight into Egypt</h3>
+                <p>Netherlandish (Antwerp) Painters</p>
+                <button class="add-to-cart-btn" data-id="8" data-name="The Rest on the Flight into Egypt" data-price="5500" data-image="images/img8.jpeg">Add to Cart</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Side Cart -->
+    <div id="side-cart" class="side-cart">
+        <div class="side-cart-header">
+            <h3>Your Cart</h3>
+            <button class="close-btn" onclick="toggleCart()">×</button>
+        </div>
+        <ul id="side-cart-items" class="side-cart-items">
+            <!-- Items dynamically added here -->
+        </ul>
+        <div class="side-cart-footer">
+            <p>Total: $<span id="side-cart-total">0.00</span></p>
+            <button class="checkout-btn">Checkout</button>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <ul>
+            <li><a href="pages/about.html">About Us</a></li>
+            <li>
+                <a href="https://www.instagram.com/" aria-label="Instagram">
+                    <img src="images/ig.png" alt="Instagram Icon">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com/" aria-label="Facebook">
+                    <img src="images/fb.png" alt="Facebook Icon">
+                </a>
+            </li>
+            <li>
+                <a href="mailto:info@echoesofart.com" aria-label="Email">
+                    <img src="images/mail.png" alt="Mail Icon">
+                </a>
+            </li>
+        </ul>
+        <p>&copy; 2024 Echoes of Art. All Rights Reserved.</p>
+    </footer>
+
+    <script src="java/scripts.js"></script>
+</body>
+</html>
